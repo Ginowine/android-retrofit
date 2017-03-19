@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity{
     private RecyclerView recyclerView = null;
 
     // insert your themoviedb.org API KEY here
-    private final static String API_KEY = "3f2700414c5e5e2a5fef77bb92707835";
+    private final static String API_KEY = "PUT_YOUR_API KEY";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
