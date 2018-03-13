@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@color/text_color"
+    android:orientation="horizontal"
+    android:padding="1dip">
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/ripple"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:radius="30dp"
+        app:mrl_rippleAlpha="0.2"
+        app:mrl_rippleColor="@color/chipBackground"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <!--  ListRow Left sied Thumbnail image -->
+            <LinearLayout
+                android:id="@+id/thumbnail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dip"
+                android:padding="3dip">
+
+                <ImageView
+                    android:id="@+id/logo_path"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- Company name-->
+                <TextView
+                    android:id="@+id/pc_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/thumbnail"
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:padding="5dp"
+                    android:text="Company name"
+                    android:textColor="@color/text_color"
+                    android:textSize="15dip"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <!-- Origin Country -->
+                <TextView
+                    android:id="@+id/pc_origin_country"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:layout_marginTop="1dip"
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:paddingLeft="5dp"
+                    android:text="Origin Country"
+                    android:textColor="#343434"
+                    android:textSize="14dip" />
+            </LinearLayout>
+
+            <!-- Id -->
+            <TextView
+                android:id="@+id/pc_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:gravity="end"
+                android:text="872"
+                android:textColor="#10bcc9"
+                android:textSize="13dip"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+</RelativeLayout>
+
+
+
