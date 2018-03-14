@@ -140,7 +140,7 @@ public class ActivityMovieDetails extends AppCompatActivity {
 
     public void renderMovie(MovieResponse movie) {
         tv_title.setText(movie.getTitle());
-        tv_original_title.setText("(Original title: " + movie.getOriginalTitle() + " - " + movie.getReleaseDate().toString() + ")");
+        tv_original_title.setText(context.getString(R.string.tv_original_title, movie.getOriginalTitle(), movie.getReleaseDate().toString()));
         webView.setBackgroundColor(Color.parseColor("#ffffff"));
         webView.setFocusableInTouchMode(false);
         webView.setFocusable(false);
@@ -154,7 +154,7 @@ public class ActivityMovieDetails extends AppCompatActivity {
                 + "<head>"
                 + "<style type=\"text/css\">body{color: #525252;}"
                 + "</style></head>"
-                + "<body>"
+                + "<body><h1>Overview:</h1>"
                 + movie.getOverview()
                 + "</body>"
                 + "</html>";
