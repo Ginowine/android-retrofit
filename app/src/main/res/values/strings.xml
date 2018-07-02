@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Movie App</string>
+    <string name="app_name">android-retrofit</string>
+
+
+    <!--Activity movie details-->
+    <string name="tv_original_title">(Original title: %1$s - %2$s)</string>
+
 </resources>

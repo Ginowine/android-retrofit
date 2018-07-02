@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MovieApp.iml" filepath="$PROJECT_DIR$/MovieApp.iml" />
+      <module fileurl="file://F:\Projects\Templates\Android\Open Source\android-retrofit-kwstarikanos\MovieApp.iml" filepath="F:\Projects\Templates\Android\Open Source\android-retrofit-kwstarikanos\MovieApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/android-retrofit-kwstarikanos.iml" filepath="$PROJECT_DIR$/.idea/android-retrofit-kwstarikanos.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

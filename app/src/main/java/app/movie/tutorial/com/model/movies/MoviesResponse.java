@@ -1,22 +1,26 @@
-package app.movie.tutorial.com.model;
+package app.movie.tutorial.com.model.movies;
 
 import java.util.List;
+
+import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-/**
- * Created by Gino Osahon on 13/03/2017.
- */
-
-// This class contains all fetched movies and extra information
-public class MovieResponse {
+public class MoviesResponse {
 
     @SerializedName("page")
+    @Expose
     private int page;
+
     @SerializedName("results")
-    private List<Movie> results;
+    @Expose
+    private List<MovieItem> results;
+
     @SerializedName("total_results")
+    @Expose
     private int totalResults;
+
     @SerializedName("total_pages")
+    @Expose
     private int totalPages;
 
     public int getPage() {
@@ -27,11 +31,11 @@ public class MovieResponse {
         this.page = page;
     }
 
-    public List<Movie> getResults() {
+    public List<MovieItem> getResults() {
         return results;
     }
 
-    public void setResults(List<Movie> results) {
+    public void setResults(List<MovieItem> results) {
         this.results = results;
     }
 
@@ -49,5 +53,15 @@ public class MovieResponse {
 
     public void setTotalPages(int totalPages) {
         this.totalPages = totalPages;
+    }
+
+    @Override
+    public String toString() {
+        return "MoviesResponse{" +
+                "page=" + page +
+                ", results=" + results +
+                ", totalResults=" + totalResults +
+                ", totalPages=" + totalPages +
+                '}';
     }
 }
